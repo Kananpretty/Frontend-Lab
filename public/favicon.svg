@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Cyan to Blue Gradient -->
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2B4"/>
+      <stop offset="100%" stop-color="#2196F3"/>
+    </linearGradient>
+
+    <!-- Deep Blue Accent -->
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00B4D8"/>
+      <stop offset="100%" stop-color="#0077B6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Bracket < -->
+  <path d="M140 180 L70 256 L140 332" 
+        stroke="#00D2B4" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right Bracket > -->
+  <path d="M372 180 L442 256 L372 332" 
+        stroke="#2196F3" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Stylized "K" Background Stem -->
+  <rect x="165" y="140" width="38" height="232" rx="19" fill="#00D2B4" opacity="0.9"/>
+  
+  <!-- Stylized "K" Upper Arm -->
+  <path d="M190 270 L310 148" 
+        stroke="#2196F3" stroke-width="38" stroke-linecap="round"/>
+
+  <!-- Stylized "K" Lower Arm -->
+  <path d="M210 250 L320 372" 
+        stroke="#0077B6" stroke-width="38" stroke-linecap="round"/>
+
+  <!-- Lab Flask Body -->
+  <path d="M228 175 
+           L228 200 
+           L185 305 
+           C175 330 192 355 220 355 
+           L292 355 
+           C320 355 337 330 327 305 
+           L284 200 
+           L284 175 Z" 
+        fill="url(#cyanBlue)" stroke="#FFFFFF" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- Flask Neck Lip -->
+  <rect x="216" y="163" width="80" height="14" rx="7" fill="#FFFFFF"/>
+
+  <!-- Fluid Level & Wave -->
+  <path d="M198 290 Q225 305 256 295 T314 290 L323 315 C317 335 300 345 285 345 L227 345 C212 345 195 335 189 315 Z" 
+        fill="#FFFFFF" opacity="0.35"/>
+
+  <!-- Bubbles -->
+  <circle cx="256" cy="270" r="10" fill="#FFFFFF"/>
+  <circle cx="238" cy="235" r="7" fill="#FFFFFF"/>
+  <circle cx="268" cy="205" r="5" fill="#FFFFFF"/>
+  <circle cx="250" cy="140" r="11" fill="#00D2B4"/>
+  <circle cx="270" cy="120" r="7" fill="#2196F3"/>
+</svg>
