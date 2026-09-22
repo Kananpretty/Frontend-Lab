@@ -11,8 +11,14 @@
 }
 
 .frontend-lab-main {
-  width: min(1200px, calc(100% - 24px));
+  width: min(980px, calc(100% - 24px));
   margin: 0 auto;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+
+.frontend-lab-main > * {
+  width: 100%;
 }
 
 a {
@@ -36,7 +42,7 @@ button {
   }
 
   .frontend-lab-main {
-    width: min(1200px, calc(100% - 10px));
+    width: min(1200px, calc(100% - 2rem));
   }
 
   .lab-card-grid {

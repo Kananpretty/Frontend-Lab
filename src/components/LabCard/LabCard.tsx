@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./LabCard.css";
 
 type LabCardProps = {
@@ -9,7 +10,7 @@ type LabCardProps = {
 
 const LabCard = ({ title, description, icon, href }: LabCardProps) => {
   return (
-    <a href={href} className="lab-card">
+    <Link to={href} className="lab-card">
       <div className="lab-card-header">
         <span className="lab-card-icon">
           <img src={icon} alt="" aria-hidden="true" className="lab-logo" />
@@ -17,7 +18,7 @@ const LabCard = ({ title, description, icon, href }: LabCardProps) => {
         <h3>{title}</h3>
       </div>
       <p>{description}</p>
-    </a>
+    </Link>
   );
 };
 

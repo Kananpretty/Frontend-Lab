@@ -14,16 +14,6 @@
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
 }
 
-.frontend-lab-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 1rem;
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 0.5rem;
-}
-
 .frontend-lab-logo {
   width: auto;
   height: 6rem;
@@ -31,26 +21,8 @@
   display: block;
 }
 
-.menu-button {
+.menu-toggle {
   display: none;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #f8fafc, #eef2ff);
-  border: 1px solid rgba(148, 163, 184, 0.38);
-  color: #0f172a;
-  padding: 0.45rem;
-  cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.menu-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.08);
-  border-color: rgba(37, 99, 235, 0.2);
 }
 
 @media screen and (max-width: 468px) {
@@ -59,19 +31,25 @@
     gap: 0.5rem;
   }
 
-  .frontend-lab-menu {
-    gap: 0.75rem;
-    padding-bottom: 0.25rem;
-  }
-
   .frontend-lab-logo {
     height: 4.5rem;
   }
 
-  .menu-button {
+  .menu-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(148, 163, 184, 0.38);
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    color: #0f172a;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
   }
 }

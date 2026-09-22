@@ -1,39 +1,62 @@
 import { NavLink } from "react-router-dom";
+import type { Dispatch, SetStateAction } from "react";
 import "./Navbar.css";
 
-const Navbar = () => {
+type NavbarProps = {
+  isMenuOpen: boolean;
+  setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
+};
+
+const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
+  const handleNavClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="frontend-lab-menu">
-      <ul className="menu-list">
+      <ul className={`menu-list ${isMenuOpen ? "menu-list--open" : ""}`}>
         <li className="menu-list-item">
-          <NavLink to="/" className="menu-link">
+          <NavLink to="/" className="menu-link" onClick={handleNavClick}>
             Home
           </NavLink>
         </li>
         <li className="menu-list-item">
-          <a href="#" className="menu-link">
+          <a href="#" className="menu-link" onClick={handleNavClick}>
             About Me
           </a>
         </li>
         <li className="menu-list-item">
-          <NavLink to="/frontend-mentor" className="menu-link">
+          <NavLink
+            to="/frontend-mentor"
+            className="menu-link"
+            onClick={handleNavClick}
+          >
             Frontend Mentor Challenges
           </NavLink>
         </li>
         <li className="menu-list-item">
-          <a href="#" className="menu-link">
+          <a href="#" className="menu-link" onClick={handleNavClick}>
             React Challenges
           </a>
         </li>
         <li className="menu-list-item">
-          <a href="#" className="menu-link">
+          <a href="#" className="menu-link" onClick={handleNavClick}>
             Javascript/Typescript Kata
           </a>
         </li>
         <li className="menu-list-item">
-          <a href="#" className="menu-link">
+          <a href="#" className="menu-link" onClick={handleNavClick}>
             Javascript Polyfills
           </a>
+        </li>
+        <li className="menu-list-item">
+          <NavLink
+            to="/personal-projects"
+            className="menu-link"
+            onClick={handleNavClick}
+          >
+            Personal Project
+          </NavLink>
         </li>
       </ul>
     </nav>

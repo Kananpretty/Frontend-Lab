@@ -10,7 +10,7 @@ export const labItems = [
     description:
       "Practising HTML, CSS, JavaScript, responsive design, accessibility, and React through Frontend Mentor challenges.",
     icon: fmLogo,
-    href: "",
+    href: "/frontend-mentor",
   },
   {
     title: "React Challenges",
@@ -38,6 +38,6 @@ export const labItems = [
     description:
       "Larger projects where I bring together the concepts I'm learning and experiment with frontend and full-stack technologies.",
     icon: personalProjectLogo,
-    href: "",
+    href: "/personal-projects",
   },
 ] as const;
