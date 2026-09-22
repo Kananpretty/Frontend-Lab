@@ -37,8 +37,12 @@ const ChallengeCard = ({
         })}
       </div>
       <div className="challenge-links">
-        <a href={githubLink}>Github Repo</a>
-        <a href={liveDemo}>Live Demo</a>
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          Github Repo
+        </a>
+        <a href={liveDemo} target="_blank" rel="noopener noreferrer">
+          Live Demo
+        </a>
       </div>
     </div>
   );

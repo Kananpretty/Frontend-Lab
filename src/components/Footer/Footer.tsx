@@ -7,7 +7,11 @@ const Footer = () => {
       <p className="footer-text">Find me online</p>
       <ul className="social-links">
         <li className="social-links-items">
-          <a href="https://www.linkedin.com/in/kanan-mehta-93770157/">
+          <a
+            href="https://www.linkedin.com/in/kanan-mehta-93770157/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={linkedingLogo}
               alt="Linkedin"
@@ -17,7 +21,11 @@ const Footer = () => {
           </a>
         </li>
         <li className="social-links-items">
-          <a href="https://github.com/Kananpretty">
+          <a
+            href="https://github.com/Kananpretty"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={githubLogo}
               alt="Github"
