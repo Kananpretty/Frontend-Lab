@@ -1,75 +1,120 @@
-# React + TypeScript + Vite
+# Frontend Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal frontend development workspace where I practise, experiment, and document what I'm learning.
 
-Currently, two official plugins are available:
+This project brings together my frontend challenges, React exercises, JavaScript/TypeScript practice, polyfills, and personal projects in one place.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+[Frontend Lab](https://frontend-lab-chi.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📚 What's Inside
 
-## Expanding the ESLint configuration
+### Frontend Mentor Challenges
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A collection of Frontend Mentor solutions focused on building strong frontend fundamentals through hands-on practice.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Topics include:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- HTML
+- CSS
+- Responsive Design
+- Accessibility
+- JavaScript
+- React
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Each challenge includes links to its source code and live implementation.
 
+### React Challenges [In Progress]
+
+Small React exercises designed to strengthen my understanding of React concepts through practical implementation.
+
+### JavaScript / TypeScript Katas [Not Started]
+
+Coding exercises focused on strengthening JavaScript and TypeScript fundamentals and problem-solving skills.
+
+### JavaScript Polyfills [Not Started]
+
+Implementations of common JavaScript methods to understand how they work under the hood and strengthen my understanding of the language.
+
+### Personal Projects [In Progress]
+
+Larger projects where I bring together the concepts I'm learning and experiment with frontend and full-stack technologies.
+
+## 🛠️ Tech Stack
+
+- React
+- TypeScript
+- Vite
+- React Router
+- CSS
+- JavaScript
+
+## 🎯 Purpose
+
+Frontend Lab is primarily a learning and practice project.
+
+The goal is to:
+
+- strengthen frontend fundamentals
+- practise React and TypeScript
+- experiment with different approaches and patterns
+- document concepts through working code
+- build a collection of practical exercises and projects
+- create a reference that I can return to when revisiting concepts
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Header/
+│   ├── Navigation/
+│   ├── Footer/
+│   ├── LabCard/
+│   └── ChallengeCard/
+│
+├── pages/
+│   ├── Home/
+│   ├── FrontendMentor/
+│
+├── data/
+│   ├── labData.ts
+│   ├── frontendMentorData.ts
+│
+├── assets/
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/Kananpretty/Frontend-Lab.git
 ```
+
+Navigate into the project:
+
+```bash
+cd Frontend-Lab
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## 📌 Status
+
+This project is actively being developed as I continue building and practising frontend concepts.
+
+New challenges, exercises, and projects will be added over time.
