@@ -27,6 +27,7 @@ const FrontendMentor = () => {
                 key={frontendMentorChallenge.id}
                 id={frontendMentorChallenge.id}
                 title={frontendMentorChallenge.title}
+                description={frontendMentorChallenge.description}
                 concepts={frontendMentorChallenge.concepts}
                 githubLink={frontendMentorChallenge.githubLink}
                 liveDemo={frontendMentorChallenge.liveDemo}

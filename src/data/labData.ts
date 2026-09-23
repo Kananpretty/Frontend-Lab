@@ -17,7 +17,7 @@ export const labItems = [
     description:
       "Small projects focused on React components, state, events, and practical React concepts.",
     icon: reactLogo,
-    href: "",
+    href: "/react-challenges",
   },
   {
     title: "JavaScript / TypeScript Katas",

@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import FrontendMentor from "./pages/FrontendMentor/FrontendMentor";
 import PersonalProject from "./pages/PersonalProject/PersonalProject";
+import ReactChallenges from "./pages/ReactChallenges/ReactChallenges";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/frontend-mentor" element={<FrontendMentor />} />
+          <Route path="/react-challenges" element={<ReactChallenges />} />
           <Route path="/personal-projects" element={<PersonalProject />} />
         </Routes>
       </main>

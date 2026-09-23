@@ -35,9 +35,13 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
           </NavLink>
         </li>
         <li className="menu-list-item">
-          <a href="#" className="menu-link" onClick={handleNavClick}>
+          <NavLink
+            to="/react-challenges"
+            className="menu-link"
+            onClick={handleNavClick}
+          >
             React Challenges
-          </a>
+          </NavLink>
         </li>
         <li className="menu-list-item">
           <a href="#" className="menu-link" onClick={handleNavClick}>

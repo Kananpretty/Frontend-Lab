@@ -7,6 +7,7 @@ type ChallengeCardProps = {
   githubLink: string;
   liveDemo: string;
   concepts: readonly string[];
+  description?: string;
 };
 
 const ChallengeCard = ({
@@ -15,6 +16,7 @@ const ChallengeCard = ({
   githubLink,
   liveDemo,
   concepts,
+  description,
 }: ChallengeCardProps) => {
   return (
     <div className="challenge-card">
@@ -31,6 +33,9 @@ const ChallengeCard = ({
           {id} {title}
         </h3>
       </div>
+      {description ? (
+        <p className="challenge-card-description">{description}</p>
+      ) : null}
       <div className="challenge-tags">
         {concepts.map((concept) => {
           return <span className="challenge-tag">{concept}</span>;
