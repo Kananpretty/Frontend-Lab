@@ -92,7 +92,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/Kananpretty/Frontend-Lab.git
+git clone https://github.com/kanan-mehta/Frontend-Lab.git
 ```
 
 Navigate into the project:

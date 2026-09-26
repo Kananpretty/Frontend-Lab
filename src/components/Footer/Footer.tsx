@@ -22,7 +22,7 @@ const Footer = () => {
         </li>
         <li className="social-links-items">
           <a
-            href="https://github.com/Kananpretty"
+            href="https://github.com/kanan-mehta"
             target="_blank"
             rel="noopener noreferrer"
           >

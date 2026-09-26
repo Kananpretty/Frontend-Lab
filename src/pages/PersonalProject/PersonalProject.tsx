@@ -44,7 +44,7 @@ const PersonalProject = () => {
             </div>
             <div className="project-links">
               <a
-                href="https://github.com/Kananpretty/TaskTracker"
+                href="https://github.com/kanan-mehta/TaskTracker"
                 target="_blank"
                 rel="noopener noreferrer"
               >
